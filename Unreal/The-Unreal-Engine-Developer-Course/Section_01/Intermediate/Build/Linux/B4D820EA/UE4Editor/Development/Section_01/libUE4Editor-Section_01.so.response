@@ -1,0 +1,9 @@
+"/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_01/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Section_01/Section_01.cpp.o"
+"/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_01/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Section_01/Section_01GameModeBase.cpp.o"
+"/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_01/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Section_01/Section_01.init.gen.cpp.o"
+"/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_01/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Section_01/Section_01GameModeBase.gen.cpp.o"
+ -soname="libUE4Editor-Section_01.so"
+ -rpath-link="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_01/Binaries/Linux"
+ -L"/home/paulo/UnrealEngine/Engine/Binaries/Linux"
+ --start-group
+ --end-group
