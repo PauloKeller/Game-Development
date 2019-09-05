@@ -1,0 +1,3 @@
+/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_02/bull-cow-game/CMakeFiles/rebuild_cache.dir
+/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_02/bull-cow-game/CMakeFiles/BullCowGame.dir
+/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_02/bull-cow-game/CMakeFiles/edit_cache.dir

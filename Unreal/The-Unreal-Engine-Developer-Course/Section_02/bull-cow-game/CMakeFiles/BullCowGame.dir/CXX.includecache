@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_02/bull-cow-game/FBullCowGame.cpp
+FBullCowGame.h
+/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_02/bull-cow-game/FBullCowGame.h
+
+/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_02/bull-cow-game/FBullCowGame.h
+string
+-
+
+/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_02/bull-cow-game/main.cpp
+iostream
+-
+string
+-
+FBullCowGame.h
+/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_02/bull-cow-game/FBullCowGame.h
+

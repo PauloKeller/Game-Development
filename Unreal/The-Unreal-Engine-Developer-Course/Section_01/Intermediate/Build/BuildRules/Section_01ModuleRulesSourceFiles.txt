@@ -1,3 +1,0 @@
-/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_01/Source/Section_01/Section_01.Build.cs
-/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_01/Source/Section_01.Target.cs
-/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/Section_01/Source/Section_01Editor.Target.cs
