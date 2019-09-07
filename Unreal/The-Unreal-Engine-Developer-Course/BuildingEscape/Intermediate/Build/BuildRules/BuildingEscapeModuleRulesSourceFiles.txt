@@ -1,3 +1,0 @@
-/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/Source/BuildingEscape/BuildingEscape.Build.cs
-/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/Source/BuildingEscape.Target.cs
-/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/Source/BuildingEscapeEditor.Target.cs
