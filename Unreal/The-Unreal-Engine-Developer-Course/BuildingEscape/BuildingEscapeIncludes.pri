@@ -2584,9 +2584,26 @@ INCLUDEPATH += \
 	/home/paulo/UnrealEngine/Engine/Plugins/VirtualProduction/Takes/Source/TakeRecorderSources/Private \
 	/home/paulo/UnrealEngine/Engine/Plugins/VirtualProduction/Takes/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TakeRecorderSources \
 	/home/paulo/UnrealEngine/Engine/Plugins/VirtualProduction/Takes/Source/TakeRecorder/Private \
-	Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BuildingEscape \
-	Source \
-	Source/BuildingEscape \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/AI \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/AI/Navigation \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Analytics \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Animation \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Curves \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/EdGraph \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Internationalization \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Net \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Net/Util \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/PacketHandlers \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Performance \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Physics \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Physics/Experimental \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Physics/ImmediatePhysics \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/ProfilingDebugging \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Rendering \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Slate \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Subsystems \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Tests \
+	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/VisualLogger \
 	/home/paulo/UnrealEngine/Engine/Source/Runtime/Core \
 	/home/paulo/UnrealEngine/Engine/Source/Runtime/Core/Public/Algo \
 	/home/paulo/UnrealEngine/Engine/Source/Runtime/Core/Public/Algo/Impl \
@@ -2622,26 +2639,6 @@ INCLUDEPATH += \
 	/home/paulo/UnrealEngine/Engine/Source/Runtime/CoreUObject/Public/Serialization \
 	/home/paulo/UnrealEngine/Engine/Source/Runtime/CoreUObject/Public/Serialization/Formatters \
 	/home/paulo/UnrealEngine/Engine/Source/Runtime/CoreUObject/Public/Templates \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/AI \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/AI/Navigation \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Analytics \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Animation \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Curves \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/EdGraph \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Internationalization \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Net \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Net/Util \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/PacketHandlers \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Performance \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Physics \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Physics/Experimental \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Physics/ImmediatePhysics \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/ProfilingDebugging \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Rendering \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Slate \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Subsystems \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/Tests \
-	/home/paulo/UnrealEngine/Engine/Source/Runtime/Engine/Public/VisualLogger \
 	/home/paulo/UnrealEngine/Engine/Source/Runtime/ApplicationCore \
 	/home/paulo/UnrealEngine/Engine/Source/Runtime/ApplicationCore/Public/GenericPlatform \
 	/home/paulo/UnrealEngine/Engine/Source/Runtime/ApplicationCore/Public/HAL \
@@ -2820,4 +2817,7 @@ INCLUDEPATH += \
 	/home/paulo/UnrealEngine/Engine/Source/Runtime/AudioMixer/Public/DSP \
 	/home/paulo/UnrealEngine/Engine/Source/Runtime/AudioMixer/Public/DSP/Encoders \
 	/home/paulo/UnrealEngine/Engine/Source/Runtime/AudioMixer/Public/SoundFileIO \
+	Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BuildingEscape \
+	Source \
+	Source/BuildingEscape \
 
