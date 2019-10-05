@@ -1,6 +1,7 @@
 # Visual Studio 2015 user specific files
 .vs/
 .vscode/
+.kdev4
 
 # Compiled Object files
 *.slo
