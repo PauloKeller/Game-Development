@@ -76,3 +76,6 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 Content/StarterContent/*
+
+#Qt creator
+*.pri
