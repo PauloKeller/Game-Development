@@ -1,5 +1,6 @@
-# intellij folder
+# intellij folders
 .idea
+cmake-build-debug/*
 
 # Visual Studio 2015 user specific files
 .vs/
