@@ -25,7 +25,7 @@ void UGrabber::BeginPlay() {
 }
 
 /// Look for attached Input Component (only appears at run time)
-void UGrabber::SetupInputComponent() {
+void UGrabber::SetupInputComponent() {  
   InputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
   if (InputComponent) {
     InputComponent->BindAction("Grab", IE_Pressed, this, &UGrabber::Grab);
@@ -52,11 +52,15 @@ void UGrabber::Grab() {
   
   /// If we hit something then attach a physics handle
   if (ActorHit) {
-    PhysicsHandle->GrabComponent(ComponentToGrab, NAME_None, ComponentToGrab->GetOwner()->GetActorLocation(), true);
+    if (PhysicsHandle != nullptr) {
+      PhysicsHandle->GrabComponent(ComponentToGrab, NAME_None, ComponentToGrab->GetOwner()->GetActorLocation(), true);
+    }
   }
 }
 
 void UGrabber::Release() {
+  if (!PhysicsHandle) { return; }
+
   PhysicsHandle -> ReleaseComponent();
 }
 
@@ -66,11 +70,14 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 
   
   // if the physics handle is attached
+  if (PhysicsHandle != nullptr) { return; }
+  
   if (PhysicsHandle->GrabbedComponent) {
     // move the object that we're holding
     FVector ReachLineTraceEnd = GetReachLineEnd();
     PhysicsHandle-> SetTargetLocation(ReachLineTraceEnd);
   } 
+ 
 }
 
 const FHitResult UGrabber::GetFirstPhysicsBodyInReach() {
