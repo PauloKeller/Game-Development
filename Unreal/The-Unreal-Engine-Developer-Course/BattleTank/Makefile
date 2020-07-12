@@ -2,19 +2,19 @@
 # *DO NOT EDIT*
 
 UNREALROOTPATH = /media/paulo/data/UnrealEngine
-GAMEPROJECTFILE =/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject
+GAMEPROJECTFILE =/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject
 
 TARGETS = \
-	BuildingEscape-Linux-Debug  \
-	BuildingEscape-Linux-DebugGame  \
-	BuildingEscape-Linux-Shipping  \
-	BuildingEscape-Linux-Test  \
-	BuildingEscape \
-	BuildingEscapeEditor-Linux-Debug  \
-	BuildingEscapeEditor-Linux-DebugGame  \
-	BuildingEscapeEditor-Linux-Shipping  \
-	BuildingEscapeEditor-Linux-Test  \
-	BuildingEscapeEditor \
+	BattleTank-Linux-Debug  \
+	BattleTank-Linux-DebugGame  \
+	BattleTank-Linux-Shipping  \
+	BattleTank-Linux-Test  \
+	BattleTank \
+	BattleTankEditor-Linux-Debug  \
+	BattleTankEditor-Linux-DebugGame  \
+	BattleTankEditor-Linux-Shipping  \
+	BattleTankEditor-Linux-Test  \
+	BattleTankEditor \
 	BenchmarkTool-Linux-Debug  \
 	BenchmarkTool-Linux-DebugGame  \
 	BenchmarkTool-Linux-Shipping  \
@@ -259,35 +259,35 @@ StandardSet: RequiredTools UnrealFrontend UE4Editor UnrealInsights
 DebugSet: RequiredTools UnrealFrontend-Linux-Debug UE4Editor-Linux-Debug
 
 
-BuildingEscape-Linux-Debug:
-	 $(PROJECTBUILD) BuildingEscape Linux Debug  -project="$(GAMEPROJECTFILE)" $(ARGS)
+BattleTank-Linux-Debug:
+	 $(PROJECTBUILD) BattleTank Linux Debug  -project="$(GAMEPROJECTFILE)" $(ARGS)
 
-BuildingEscape-Linux-DebugGame:
-	 $(PROJECTBUILD) BuildingEscape Linux DebugGame  -project="$(GAMEPROJECTFILE)" $(ARGS)
+BattleTank-Linux-DebugGame:
+	 $(PROJECTBUILD) BattleTank Linux DebugGame  -project="$(GAMEPROJECTFILE)" $(ARGS)
 
-BuildingEscape-Linux-Shipping:
-	 $(PROJECTBUILD) BuildingEscape Linux Shipping  -project="$(GAMEPROJECTFILE)" $(ARGS)
+BattleTank-Linux-Shipping:
+	 $(PROJECTBUILD) BattleTank Linux Shipping  -project="$(GAMEPROJECTFILE)" $(ARGS)
 
-BuildingEscape-Linux-Test:
-	 $(PROJECTBUILD) BuildingEscape Linux Test  -project="$(GAMEPROJECTFILE)" $(ARGS)
+BattleTank-Linux-Test:
+	 $(PROJECTBUILD) BattleTank Linux Test  -project="$(GAMEPROJECTFILE)" $(ARGS)
 
-BuildingEscape:
-	 $(PROJECTBUILD) BuildingEscape Linux Development  -project="$(GAMEPROJECTFILE)" $(ARGS)
+BattleTank:
+	 $(PROJECTBUILD) BattleTank Linux Development  -project="$(GAMEPROJECTFILE)" $(ARGS)
 
-BuildingEscapeEditor-Linux-Debug:
-	 $(PROJECTBUILD) BuildingEscapeEditor Linux Debug  -project="$(GAMEPROJECTFILE)" $(ARGS)
+BattleTankEditor-Linux-Debug:
+	 $(PROJECTBUILD) BattleTankEditor Linux Debug  -project="$(GAMEPROJECTFILE)" $(ARGS)
 
-BuildingEscapeEditor-Linux-DebugGame:
-	 $(PROJECTBUILD) BuildingEscapeEditor Linux DebugGame  -project="$(GAMEPROJECTFILE)" $(ARGS)
+BattleTankEditor-Linux-DebugGame:
+	 $(PROJECTBUILD) BattleTankEditor Linux DebugGame  -project="$(GAMEPROJECTFILE)" $(ARGS)
 
-BuildingEscapeEditor-Linux-Shipping:
-	 $(PROJECTBUILD) BuildingEscapeEditor Linux Shipping  -project="$(GAMEPROJECTFILE)" $(ARGS)
+BattleTankEditor-Linux-Shipping:
+	 $(PROJECTBUILD) BattleTankEditor Linux Shipping  -project="$(GAMEPROJECTFILE)" $(ARGS)
 
-BuildingEscapeEditor-Linux-Test:
-	 $(PROJECTBUILD) BuildingEscapeEditor Linux Test  -project="$(GAMEPROJECTFILE)" $(ARGS)
+BattleTankEditor-Linux-Test:
+	 $(PROJECTBUILD) BattleTankEditor Linux Test  -project="$(GAMEPROJECTFILE)" $(ARGS)
 
-BuildingEscapeEditor:
-	 $(PROJECTBUILD) BuildingEscapeEditor Linux Development  -project="$(GAMEPROJECTFILE)" $(ARGS)
+BattleTankEditor:
+	 $(PROJECTBUILD) BattleTankEditor Linux Development  -project="$(GAMEPROJECTFILE)" $(ARGS)
 
 BenchmarkTool-Linux-Debug:
 	 $(BUILD) BenchmarkTool Linux Debug  -project="$(GAMEPROJECTFILE)" $(ARGS)

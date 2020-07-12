@@ -1,559 +1,245 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CodeLite_Workspace Name="BuildingEscape" SWTLW="Yes">
+<CodeLite_Workspace Name="BattleTank" SWTLW="Yes">
   <WorkspaceParserPaths>
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Engine" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Classes" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/AI" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/AI/Navigation" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Analytics" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Animation" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Audio" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Blueprint" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Curves" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/EdGraph" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Internationalization" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Net" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Net/Util" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/PacketHandlers" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Performance" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Physics" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Physics/Experimental" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Physics/ImmediatePhysics" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Physics/ImmediatePhysics/ImmediatePhysicsChaos" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Physics/ImmediatePhysics/ImmediatePhysicsPhysX" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Physics/ImmediatePhysics/ImmediatePhysicsShared" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Physics/Tests" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/ProfilingDebugging" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Rendering" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Slate" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Streaming" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Subsystems" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/Tests" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/VT" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public/VisualLogger" />
+    <Include Path="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BattleTank" />
+    <Include Path="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/Source" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Core" />
+    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/TraceLog/Public" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Algo" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Algo/Impl" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Async" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Clang" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Compression" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Concepts" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Containers" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Delegates" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Experimental" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Experimental/Containers" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Features" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/FileCache" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/FramePro" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/GenericPlatform" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/HAL" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/HAL/Allocators" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Hash" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/IO" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Internationalization" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Linux" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Logging" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/MSVC" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Math" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/MemPro" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Memory" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Misc" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Modules" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Modules/Boilerplate" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/ProfilingDebugging" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Serialization" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Serialization/Csv" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Serialization/Formatters" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Stats" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/String" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Templates" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Traits" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/UObject" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Core/Public/Unix" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TraceLog" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/TraceLog" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/TraceLog/Public/Trace" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/TraceLog/Public/Trace/Detail" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/TraceLog/Public/Trace/Detail/Protocols" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CoreUObject" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/CoreUObject/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/CoreUObject" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/CoreUObject/Public/Blueprint" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/CoreUObject/Public/Internationalization" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/CoreUObject/Public/Misc" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/CoreUObject/Public/Serialization" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/CoreUObject/Public/Serialization/Formatters" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/CoreUObject/Public/Templates" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/CoreUObject/Public/UObject" />
+    <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Engine" />
+    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Classes" />
+    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Engine/Public" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NetCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Net" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Net/Core/Classes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Net/Core/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Net/Core" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Net/Core/Public/Net" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Net/Core/Public/Net/Core" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Net/Core/Public/Net/Core/Analytics" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Net/Core/Public/Net/Core/Misc" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Net/Core/Public/Net/Core/PushModel" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Net/Core/Public/Net/Core/Trace" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Net/Core/Public/Net/Core/Trace/Private" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ApplicationCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/ApplicationCore/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/ApplicationCore" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/ApplicationCore/Public/GenericPlatform" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/ApplicationCore/Public/GenericPlatform/Accessibility" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/ApplicationCore/Public/HAL" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/ApplicationCore/Public/Linux" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/ApplicationCore/Public/Unix" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RHI" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/RHI/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/RHI" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Json" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Json/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Json" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Json/Public/Dom" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Json/Public/Policies" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Json/Public/Serialization" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SlateCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Animation" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Application" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Brushes" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Debugging" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/FastUpdate" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Fonts" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Input" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Layout" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Rendering" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Sound" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Styling" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Textures" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Types" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Widgets" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Widgets/Accessibility" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SlateCore/Public/Widgets/Images" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/InputCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/InputCore/Classes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/InputCore/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/InputCore" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/InputCore/Public/GenericPlatform" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/InputCore/Public/HAL" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/InputCore/Public/Linux" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Slate" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Framework" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Framework/Application" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Framework/Commands" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Framework/Docking" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Framework/Layout" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Framework/MetaData" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Framework/MultiBox" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Framework/Notifications" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Framework/Styling" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Framework/Text" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Framework/Text/Linux" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Framework/Views" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets/Accessibility" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets/Colors" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets/Docking" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets/Images" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets/Input" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets/LayerManager" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets/Layout" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets/Navigation" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets/Notifications" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets/Text" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets/Views" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImageWrapper" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/ImageWrapper/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/ImageWrapper" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Messaging" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Messaging/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Messaging" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MessagingCommon" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MessagingCommon/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MessagingCommon" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RenderCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/RenderCore/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/RenderCore" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/RenderCore/Public/ProfilingDebugging" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnalyticsET" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Analytics" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Analytics/AnalyticsET/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Analytics/AnalyticsET" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Analytics" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Analytics/Analytics/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Analytics/Analytics" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Analytics/Analytics/Public/Interfaces" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Sockets" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Sockets/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Sockets" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AssetRegistry" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AssetRegistry/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AssetRegistry" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EngineMessages" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/EngineMessages/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/EngineMessages" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EngineSettings" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/EngineSettings/Classes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/EngineSettings/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/EngineSettings" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SynthBenchmark" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SynthBenchmark/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SynthBenchmark" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Renderer" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Renderer/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Renderer" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Renderer/Public/VT" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayTags" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/GameplayTags/Classes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/GameplayTags/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/GameplayTags" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PacketHandler" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/PacketHandlers" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/PacketHandlers/PacketHandler/Classes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/PacketHandlers/PacketHandler/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/PacketHandlers/PacketHandler" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ReliabilityHandlerComponent" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/PacketHandlers/ReliabilityHandlerComponent/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/PacketHandlers/ReliabilityHandlerComponent" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioPlatformConfiguration" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AudioPlatformConfiguration/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AudioPlatformConfiguration" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshDescription" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MeshDescription/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MeshDescription" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/StaticMeshDescription" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/StaticMeshDescription/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/StaticMeshDescription" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PakFile" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/PakFile/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/PakFile" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RSA" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/RSA/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/RSA" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NetworkReplayStreaming" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/NetworkReplayStreaming" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/NetworkReplayStreaming/NetworkReplayStreaming/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/NetworkReplayStreaming/NetworkReplayStreaming" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PhysicsCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/PhysicsCore/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/PhysicsCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Chaos" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/Chaos/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/Chaos" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos/Collision" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos/Evolution" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos/Framework" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos/Joint" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos/Particle" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ChaosCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/ChaosCore/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/ChaosCore" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/ChaosCore/Public/Chaos" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/ThirdParty" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Voronoi" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/Voronoi/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/Voronoi" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/Voronoi/Public/Voronoi" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FieldSystemCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/FieldSystem/Source" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/FieldSystem/Source/FieldSystemCore/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/FieldSystem/Source/FieldSystemCore" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/FieldSystem/Source/FieldSystemCore/Public/Field" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SignalProcessing" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SignalProcessing/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SignalProcessing" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SignalProcessing/Public/DSP" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SignalProcessing/Public/DSP/Encoders" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioExtensions" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AudioExtensions/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AudioExtensions" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioMixerCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AudioMixerCore/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AudioMixerCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UnrealEd" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Programs/UnrealLightmass/Public" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/Android/AndroidDeviceDetection/Public/Interfaces" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Classes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/AutoReimport" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Bookmarks" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Commandlets" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Dialogs" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/DragAndDrop" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Features" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Kismet2" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Layers" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Settings" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Subsystems" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Tests" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Toolkits" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEd/Public/Tools" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DirectoryWatcher" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/DirectoryWatcher/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/DirectoryWatcher" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Documentation" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/Documentation/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/Documentation" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Projects" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Projects/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Projects" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Projects/Public/Interfaces" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SandboxFile" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SandboxFile/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/SandboxFile" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EditorStyle" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/EditorStyle/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/EditorStyle" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/EditorStyle/Public/Classes" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/EditorStyle/Public/Interfaces" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SourceControl" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/SourceControl/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/SourceControl" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/SourceControl/Public/Tests" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UnrealEdMessages" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEdMessages/Classes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEdMessages/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/UnrealEdMessages" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayDebugger" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/GameplayDebugger/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/GameplayDebugger" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BlueprintGraph" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/BlueprintGraph/Classes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/BlueprintGraph/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/BlueprintGraph" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EditorSubsystem" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/EditorSubsystem/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/EditorSubsystem" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HTTP" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Online" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Online/HTTP/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Online/HTTP" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Online/HTTP/Public/GenericPlatform" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Online/HTTP/Public/Interfaces" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Online/HTTP/Public/Linux" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Online/HTTP/Public/Unix" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UnrealAudio" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/UnrealAudio/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/UnrealAudio" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FunctionalTesting" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/FunctionalTesting/Classes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/FunctionalTesting/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/FunctionalTesting" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AutomationController" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/AutomationController/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/AutomationController" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Localization" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/Localization/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/Localization" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/Localization/Public/Serialization" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioEditor" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/AudioEditor/Classes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/AudioEditor/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/AudioEditor" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/AudioEditor/Public/AssetTypeActions" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioMixer" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AudioMixer/Classes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AudioMixer/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AudioMixer" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AudioMixer/Public/Components" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AudioMixer/Public/SoundFileIO" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TargetPlatform" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/TargetPlatform/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/TargetPlatform" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/TargetPlatform/Public/Common" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/TargetPlatform/Public/Interfaces" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LevelEditor" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/LevelEditor/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/LevelEditor" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Settings" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/Settings/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/Settings" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/IntroTutorials" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/IntroTutorials/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/IntroTutorials" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HeadMountedDisplay" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/HeadMountedDisplay/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/HeadMountedDisplay" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/VREditor" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/VREditor" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/VREditor/Public" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CommonMenuExtensions" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/CommonMenuExtensions/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/CommonMenuExtensions" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Landscape" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Landscape/Classes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Landscape/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Landscape" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PropertyEditor" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/PropertyEditor/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/PropertyEditor" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ActorPickerMode" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/ActorPickerMode/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/ActorPickerMode" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SceneDepthPickerMode" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/SceneDepthPickerMode/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/SceneDepthPickerMode" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DetailCustomizations" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/DetailCustomizations/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/DetailCustomizations" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/DetailCustomizations/Public/Customizations" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ClassViewer" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/ClassViewer/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/ClassViewer" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GraphEditor" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/GraphEditor/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/GraphEditor" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/GraphEditor/Public/DragAndDrop" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/GraphEditor/Public/KismetNodes" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/GraphEditor/Public/KismetPins" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/StructViewer" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/StructViewer/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/StructViewer" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ContentBrowser" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/ContentBrowser/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/ContentBrowser" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NetworkFileSystem" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/NetworkFileSystem/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/NetworkFileSystem" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UMG" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/UMG/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/UMG" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/UMG/Public/Animation" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/UMG/Public/Binding" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/UMG/Public/Blueprint" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/UMG/Public/Components" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/UMG/Public/Editor" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/UMG/Public/Slate" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MovieScene" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieScene/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieScene" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieScene/Public/Channels" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieScene/Public/Compilation" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieScene/Public/Evaluation" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieScene/Public/Evaluation/Blending" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieScene/Public/Generators" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieScene/Public/Sections" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieScene/Public/Tracks" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TimeManagement" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/TimeManagement/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/TimeManagement" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/TimeManagement/Public/Widgets" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MovieSceneTracks" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks/Public/Channels" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks/Public/Evaluation" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks/Public/Sections" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MovieSceneTracks/Public/Tracks" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimationCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AnimationCore/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AnimationCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PropertyPath" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/PropertyPath/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/PropertyPath" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NavigationSystem" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/NavigationSystem/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/NavigationSystem" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/NavigationSystem/Public/NavAreas" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/NavigationSystem/Public/NavFilters" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/NavigationSystem/Public/NavGraph" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/NavigationSystem/Public/NavMesh" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshBuilder" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/MeshBuilder/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/MeshBuilder" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MaterialShaderQualitySettings" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MaterialShaderQualitySettings/Classes" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/MaterialShaderQualitySettings" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/InteractiveToolsFramework" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/InteractiveToolsFramework/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/InteractiveToolsFramework" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/InteractiveToolsFramework/Public/BaseBehaviors" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/InteractiveToolsFramework/Public/BaseGizmos" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/InteractiveToolsFramework/Public/BaseTools" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/InteractiveToolsFramework/Public/Changes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ToolMenusEditor" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/ToolMenusEditor/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/ToolMenusEditor" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AssetTagsEditor" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/AssetTagsEditor/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/AssetTagsEditor" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CollectionManager" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/CollectionManager/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/CollectionManager" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AddContentDialog" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/AddContentDialog/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/AddContentDialog" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshUtilities" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/MeshUtilities/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/MeshUtilities" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshMergeUtilities" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/MeshMergeUtilities/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/MeshMergeUtilities" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HierarchicalLODUtilities" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/HierarchicalLODUtilities/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/HierarchicalLODUtilities" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshReductionInterface" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/MeshReductionInterface/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/MeshReductionInterface" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AssetTools" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/AssetTools/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/AssetTools" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Developer/AssetTools/Public/AssetTypeActions" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/KismetCompiler" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/KismetCompiler/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/KismetCompiler" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayTasks" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/GameplayTasks/Classes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/GameplayTasks/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/GameplayTasks" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AIModule" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AIModule/Public" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AIModule/Classes" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/AIModule" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Kismet" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/Kismet/Classes" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/Kismet/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/Kismet" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Editor/Kismet/Public/WorkflowOrientedApp" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PhysicsSQ" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/PhysicsSQ/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/PhysicsSQ" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ChaosSolvers" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/ChaosSolvers/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/ChaosSolvers" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/ChaosSolvers/Public/Framework" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/ChaosSolvers/Public/PhysicsProxy" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GeometryCollectionCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/GeometryCollectionCore/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/GeometryCollectionCore" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/GeometryCollectionCore/Public/GeometryCollection" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GeometryCollectionSimulationCore" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/GeometryCollectionSimulationCore/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/GeometryCollectionSimulationCore" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/Experimental/GeometryCollectionSimulationCore/Public/GeometryCollection" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ClothingSystemRuntimeInterface" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/ClothingSystemRuntimeInterface/Public" />
-    <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/Runtime/ClothingSystemRuntimeInterface" />
-    <Include Path="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BuildingEscape" />
-    <Include Path="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/Source" />
-    <Include Path="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/Source/BuildingEscape" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/ThirdParty/PhysX3/PxShared/include" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/ThirdParty/PhysX3/PxShared/include/cudamanager" />
     <Include Path="/media/paulo/data/UnrealEngine/Engine/Source/ThirdParty/PhysX3/PxShared/include/filebuf" />
@@ -4413,13 +4099,13 @@
     <Project Name="BootstrapPackagedGame" Path="Intermediate/ProjectFiles/BootstrapPackagedGame.project" Active="No" />
   </VirtualDirectory>
   <VirtualDirectory Name="Game">
-    <Project Name="BuildingEscape" Path="Intermediate/ProjectFiles/BuildingEscape.project" Active="No" />
-    <Project Name="BuildingEscapeEditor" Path="Intermediate/ProjectFiles/BuildingEscapeEditor.project" Active="No" />
+    <Project Name="BattleTank" Path="Intermediate/ProjectFiles/BattleTank.project" Active="No" />
+    <Project Name="BattleTankEditor" Path="Intermediate/ProjectFiles/BattleTankEditor.project" Active="No" />
   </VirtualDirectory>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="no">
-      <Project Name="BuildingEscape" ConfigName="Debug" />
-      <Project Name="BuildingEscapeEditor" ConfigName="Debug" />
+      <Project Name="BattleTank" ConfigName="Debug" />
+      <Project Name="BattleTankEditor" ConfigName="Debug" />
       <Project Name="BenchmarkTool" ConfigName="Debug" />
       <Project Name="BlankProgram" ConfigName="Debug" />
       <Project Name="BuildPatchTool" ConfigName="Debug" />
@@ -4468,8 +4154,8 @@
       <Project Name="UE4Server" ConfigName="Debug" />
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="DebugGame" Selected="no">
-      <Project Name="BuildingEscape" ConfigName="DebugGame" />
-      <Project Name="BuildingEscapeEditor" ConfigName="DebugGame" />
+      <Project Name="BattleTank" ConfigName="DebugGame" />
+      <Project Name="BattleTankEditor" ConfigName="DebugGame" />
       <Project Name="BenchmarkTool" ConfigName="DebugGame" />
       <Project Name="BlankProgram" ConfigName="DebugGame" />
       <Project Name="BuildPatchTool" ConfigName="DebugGame" />
@@ -4518,8 +4204,8 @@
       <Project Name="UE4Server" ConfigName="DebugGame" />
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Development" Selected="no">
-      <Project Name="BuildingEscape" ConfigName="Development" />
-      <Project Name="BuildingEscapeEditor" ConfigName="Development" />
+      <Project Name="BattleTank" ConfigName="Development" />
+      <Project Name="BattleTankEditor" ConfigName="Development" />
       <Project Name="BenchmarkTool" ConfigName="Development" />
       <Project Name="BlankProgram" ConfigName="Development" />
       <Project Name="BuildPatchTool" ConfigName="Development" />
@@ -4568,8 +4254,8 @@
       <Project Name="UE4Server" ConfigName="Development" />
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Shipping" Selected="no">
-      <Project Name="BuildingEscape" ConfigName="Shipping" />
-      <Project Name="BuildingEscapeEditor" ConfigName="Shipping" />
+      <Project Name="BattleTank" ConfigName="Shipping" />
+      <Project Name="BattleTankEditor" ConfigName="Shipping" />
       <Project Name="BenchmarkTool" ConfigName="Shipping" />
       <Project Name="BlankProgram" ConfigName="Shipping" />
       <Project Name="BuildPatchTool" ConfigName="Shipping" />
@@ -4618,8 +4304,8 @@
       <Project Name="UE4Server" ConfigName="Shipping" />
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Test" Selected="no">
-      <Project Name="BuildingEscape" ConfigName="Test" />
-      <Project Name="BuildingEscapeEditor" ConfigName="Test" />
+      <Project Name="BattleTank" ConfigName="Test" />
+      <Project Name="BattleTankEditor" ConfigName="Test" />
       <Project Name="BenchmarkTool" ConfigName="Test" />
       <Project Name="BlankProgram" ConfigName="Test" />
       <Project Name="BuildPatchTool" ConfigName="Test" />

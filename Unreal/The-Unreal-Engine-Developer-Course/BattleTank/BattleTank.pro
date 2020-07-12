@@ -10,30 +10,30 @@ CONFIG -= qt
 TARGET = UE4 
 
 unrealRootPath=/media/paulo/data/UnrealEngine
-BuildingEscapeRootPath=/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape
+BattleTankRootPath=/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank
 
-gameProjectFile=/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject
+gameProjectFile=/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject
 build=bash $$unrealRootPath/Engine/Build/BatchFiles/Linux/RunMono.sh $$unrealRootPath/Engine/Binaries/DotNET/UnrealBuildTool.exe
 
 args=$(ARGS)
 
-include(BuildingEscapeSource.pri)
-include(BuildingEscapeHeader.pri)
-include(BuildingEscapeConfig.pri)
-include(BuildingEscapeIncludes.pri)
-include(BuildingEscapeDefines.pri)
+include(BattleTankSource.pri)
+include(BattleTankHeader.pri)
+include(BattleTankConfig.pri)
+include(BattleTankIncludes.pri)
+include(BattleTankDefines.pri)
 
-BuildingEscape-Linux-Debug.commands = $$build BuildingEscape Linux Debug  -project="\"$$gameProjectFile\"" $$args
-BuildingEscape-Linux-DebugGame.commands = $$build BuildingEscape Linux DebugGame  -project="\"$$gameProjectFile\"" $$args
-BuildingEscape-Linux-Shipping.commands = $$build BuildingEscape Linux Shipping  -project="\"$$gameProjectFile\"" $$args
-BuildingEscape-Linux-Test.commands = $$build BuildingEscape Linux Test  -project="\"$$gameProjectFile\"" $$args
-BuildingEscape.commands = $$build BuildingEscape Linux Development  -project="\"$$gameProjectFile\"" $$args
+BattleTank-Linux-Debug.commands = $$build BattleTank Linux Debug  -project="\"$$gameProjectFile\"" $$args
+BattleTank-Linux-DebugGame.commands = $$build BattleTank Linux DebugGame  -project="\"$$gameProjectFile\"" $$args
+BattleTank-Linux-Shipping.commands = $$build BattleTank Linux Shipping  -project="\"$$gameProjectFile\"" $$args
+BattleTank-Linux-Test.commands = $$build BattleTank Linux Test  -project="\"$$gameProjectFile\"" $$args
+BattleTank.commands = $$build BattleTank Linux Development  -project="\"$$gameProjectFile\"" $$args
 
-BuildingEscapeEditor-Linux-Debug.commands = $$build BuildingEscapeEditor Linux Debug  -project="\"$$gameProjectFile\"" $$args
-BuildingEscapeEditor-Linux-DebugGame.commands = $$build BuildingEscapeEditor Linux DebugGame  -project="\"$$gameProjectFile\"" $$args
-BuildingEscapeEditor-Linux-Shipping.commands = $$build BuildingEscapeEditor Linux Shipping  -project="\"$$gameProjectFile\"" $$args
-BuildingEscapeEditor-Linux-Test.commands = $$build BuildingEscapeEditor Linux Test  -project="\"$$gameProjectFile\"" $$args
-BuildingEscapeEditor.commands = $$build BuildingEscapeEditor Linux Development  -project="\"$$gameProjectFile\"" $$args
+BattleTankEditor-Linux-Debug.commands = $$build BattleTankEditor Linux Debug  -project="\"$$gameProjectFile\"" $$args
+BattleTankEditor-Linux-DebugGame.commands = $$build BattleTankEditor Linux DebugGame  -project="\"$$gameProjectFile\"" $$args
+BattleTankEditor-Linux-Shipping.commands = $$build BattleTankEditor Linux Shipping  -project="\"$$gameProjectFile\"" $$args
+BattleTankEditor-Linux-Test.commands = $$build BattleTankEditor Linux Test  -project="\"$$gameProjectFile\"" $$args
+BattleTankEditor.commands = $$build BattleTankEditor Linux Development  -project="\"$$gameProjectFile\"" $$args
 
 BenchmarkTool-Linux-Debug.commands = $$build BenchmarkTool Linux Debug  -project="\"$$gameProjectFile\"" $$args
 BenchmarkTool-Linux-DebugGame.commands = $$build BenchmarkTool Linux DebugGame  -project="\"$$gameProjectFile\"" $$args
@@ -312,16 +312,16 @@ UE4Server-Linux-Test.commands = $$build UE4Server Linux Test  -project="\"$$game
 UE4Server.commands = $$build UE4Server Linux Development  -project="\"$$gameProjectFile\"" $$args
 
 QMAKE_EXTRA_TARGETS += \ 
-	BuildingEscape-Linux-Debug \
-	BuildingEscape-Linux-DebugGame \
-	BuildingEscape-Linux-Shipping \
-	BuildingEscape-Linux-Test \
-	BuildingEscape \
-	BuildingEscapeEditor-Linux-Debug \
-	BuildingEscapeEditor-Linux-DebugGame \
-	BuildingEscapeEditor-Linux-Shipping \
-	BuildingEscapeEditor-Linux-Test \
-	BuildingEscapeEditor \
+	BattleTank-Linux-Debug \
+	BattleTank-Linux-DebugGame \
+	BattleTank-Linux-Shipping \
+	BattleTank-Linux-Test \
+	BattleTank \
+	BattleTankEditor-Linux-Debug \
+	BattleTankEditor-Linux-DebugGame \
+	BattleTankEditor-Linux-Shipping \
+	BattleTankEditor-Linux-Test \
+	BattleTankEditor \
 	BenchmarkTool-Linux-Debug \
 	BenchmarkTool-Linux-DebugGame \
 	BenchmarkTool-Linux-Shipping \

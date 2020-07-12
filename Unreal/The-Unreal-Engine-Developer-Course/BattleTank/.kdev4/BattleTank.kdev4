@@ -28,24 +28,24 @@ Type=1
 
 [CustomBuildSystem][BuildConfig1]
 BuildDir=file:///media/paulo/data/UnrealEngine
-Title=BuildingEscape-Linux-Debug
+Title=BattleTank-Linux-Debug
 
 [CustomBuildSystem][BuildConfig1][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscape Linux Debug
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTank Linux Debug
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=0
 
 [CustomBuildSystem][BuildConfig1][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" -game -engine  BuildingEscape Linux Debug
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" -game -engine  BattleTank Linux Debug
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=1
 
 [CustomBuildSystem][BuildConfig1][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscape Linux Debug -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTank Linux Debug -clean
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
@@ -53,24 +53,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig2]
 BuildDir=file:///media/paulo/data/UnrealEngine
-Title=BuildingEscape-Linux-DebugGame
+Title=BattleTank-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig2][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscape Linux DebugGame
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTank Linux DebugGame
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=0
 
 [CustomBuildSystem][BuildConfig2][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" -game -engine  BuildingEscape Linux DebugGame
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" -game -engine  BattleTank Linux DebugGame
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=1
 
 [CustomBuildSystem][BuildConfig2][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscape Linux DebugGame -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTank Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
@@ -78,24 +78,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig3]
 BuildDir=file:///media/paulo/data/UnrealEngine
-Title=BuildingEscape-Linux-Shipping
+Title=BattleTank-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig3][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscape Linux Shipping
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTank Linux Shipping
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=0
 
 [CustomBuildSystem][BuildConfig3][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" -game -engine  BuildingEscape Linux Shipping
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" -game -engine  BattleTank Linux Shipping
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=1
 
 [CustomBuildSystem][BuildConfig3][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscape Linux Shipping -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTank Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
@@ -103,24 +103,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig4]
 BuildDir=file:///media/paulo/data/UnrealEngine
-Title=BuildingEscape-Linux-Test
+Title=BattleTank-Linux-Test
 
 [CustomBuildSystem][BuildConfig4][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscape Linux Test
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTank Linux Test
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=0
 
 [CustomBuildSystem][BuildConfig4][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" -game -engine  BuildingEscape Linux Test
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" -game -engine  BattleTank Linux Test
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=1
 
 [CustomBuildSystem][BuildConfig4][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscape Linux Test -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTank Linux Test -clean
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
@@ -128,24 +128,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig5]
 BuildDir=file:///media/paulo/data/UnrealEngine
-Title=BuildingEscape
+Title=BattleTank
 
 [CustomBuildSystem][BuildConfig5][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscape Linux Development
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTank Linux Development
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=0
 
 [CustomBuildSystem][BuildConfig5][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" -game -engine  BuildingEscape Linux Development
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" -game -engine  BattleTank Linux Development
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=1
 
 [CustomBuildSystem][BuildConfig5][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscape Linux Development -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTank Linux Development -clean
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
@@ -153,24 +153,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig6]
 BuildDir=file:///media/paulo/data/UnrealEngine
-Title=BuildingEscapeEditor-Linux-Debug
+Title=BattleTankEditor-Linux-Debug
 
 [CustomBuildSystem][BuildConfig6][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscapeEditor Linux Debug
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTankEditor Linux Debug
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=0
 
 [CustomBuildSystem][BuildConfig6][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" -game -engine  BuildingEscapeEditor Linux Debug
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" -game -engine  BattleTankEditor Linux Debug
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=1
 
 [CustomBuildSystem][BuildConfig6][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscapeEditor Linux Debug -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTankEditor Linux Debug -clean
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
@@ -178,24 +178,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig7]
 BuildDir=file:///media/paulo/data/UnrealEngine
-Title=BuildingEscapeEditor-Linux-DebugGame
+Title=BattleTankEditor-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig7][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscapeEditor Linux DebugGame
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTankEditor Linux DebugGame
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=0
 
 [CustomBuildSystem][BuildConfig7][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" -game -engine  BuildingEscapeEditor Linux DebugGame
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" -game -engine  BattleTankEditor Linux DebugGame
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=1
 
 [CustomBuildSystem][BuildConfig7][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscapeEditor Linux DebugGame -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTankEditor Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
@@ -203,24 +203,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig8]
 BuildDir=file:///media/paulo/data/UnrealEngine
-Title=BuildingEscapeEditor-Linux-Shipping
+Title=BattleTankEditor-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig8][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscapeEditor Linux Shipping
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTankEditor Linux Shipping
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=0
 
 [CustomBuildSystem][BuildConfig8][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" -game -engine  BuildingEscapeEditor Linux Shipping
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" -game -engine  BattleTankEditor Linux Shipping
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=1
 
 [CustomBuildSystem][BuildConfig8][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscapeEditor Linux Shipping -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTankEditor Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
@@ -228,24 +228,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig9]
 BuildDir=file:///media/paulo/data/UnrealEngine
-Title=BuildingEscapeEditor-Linux-Test
+Title=BattleTankEditor-Linux-Test
 
 [CustomBuildSystem][BuildConfig9][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscapeEditor Linux Test
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTankEditor Linux Test
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=0
 
 [CustomBuildSystem][BuildConfig9][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" -game -engine  BuildingEscapeEditor Linux Test
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" -game -engine  BattleTankEditor Linux Test
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=1
 
 [CustomBuildSystem][BuildConfig9][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscapeEditor Linux Test -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTankEditor Linux Test -clean
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
@@ -253,24 +253,24 @@ Type=3
 
 [CustomBuildSystem][BuildConfig10]
 BuildDir=file:///media/paulo/data/UnrealEngine
-Title=BuildingEscapeEditor
+Title=BattleTankEditor
 
 [CustomBuildSystem][BuildConfig10][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscapeEditor Linux Development
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTankEditor Linux Development
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=0
 
 [CustomBuildSystem][BuildConfig10][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" -game -engine  BuildingEscapeEditor Linux Development
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" -game -engine  BattleTankEditor Linux Development
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
 Type=1
 
 [CustomBuildSystem][BuildConfig10][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BuildingEscape/BuildingEscape.uproject" BuildingEscapeEditor Linux Development -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/paulo/Workspace/Game-Development/Unreal/The-Unreal-Engine-Developer-Course/BattleTank/BattleTank/BattleTank.uproject" BattleTankEditor Linux Development -clean
 Enabled=true
 Environment=
 Executable=Engine/Build/BatchFiles/Linux/RunMono.sh
