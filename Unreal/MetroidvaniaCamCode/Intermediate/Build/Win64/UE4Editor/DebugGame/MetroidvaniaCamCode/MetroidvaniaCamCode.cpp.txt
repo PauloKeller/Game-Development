@@ -1,0 +1,2 @@
+C:\Users\Paulo\Documents\Workspace\Game-Development\Unreal\MetroidvaniaCamCode\Intermediate\Build\Win64\UE4Editor\DebugGame\MetroidvaniaCamCode\Definitions.MetroidvaniaCamCode.h
+C:\Users\Paulo\Documents\Workspace\Game-Development\Unreal\MetroidvaniaCamCode\Source\MetroidvaniaCamCode\MetroidvaniaCamCode.h

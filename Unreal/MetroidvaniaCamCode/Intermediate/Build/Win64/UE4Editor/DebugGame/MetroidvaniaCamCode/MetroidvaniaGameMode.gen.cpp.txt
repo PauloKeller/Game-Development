@@ -1,0 +1,9 @@
+C:\Users\Paulo\Documents\Workspace\Game-Development\Unreal\MetroidvaniaCamCode\Intermediate\Build\Win64\UE4Editor\DebugGame\MetroidvaniaCamCode\Definitions.MetroidvaniaCamCode.h
+D:\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\Paulo\Documents\Workspace\Game-Development\Unreal\MetroidvaniaCamCode\Source\MetroidvaniaCamCode/MetroidvaniaGameMode.h
+D:\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+D:\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+D:\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+D:\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Users\Paulo\Documents\Workspace\Game-Development\Unreal\MetroidvaniaCamCode\Intermediate\Build\Win64\UE4Editor\Inc\MetroidvaniaCamCode\MetroidvaniaGameMode.generated.h

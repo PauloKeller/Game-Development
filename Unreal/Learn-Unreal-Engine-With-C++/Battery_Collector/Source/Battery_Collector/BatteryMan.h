@@ -9,9 +9,12 @@
 #include "Components/CapsuleComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/InputComponent.h"
+#include "Components/SkeletalMeshComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "GameFramework/Actor.h"
+#include "Kismet/GameplayStatics.h"
 
 #include "Blueprint/UserWidget.h"
 
@@ -26,16 +29,32 @@ public:
 	// Sets default values for this character's properties
 	ABatteryMan();
 
+	bool bDead;
+
+	void MoveForward(float Axis);
+    void MoveRight(float Axis);
+    void RestartGame();
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 		USpringArmComponent* CameraBoom;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 		UCameraComponent* FollowCamera;
 
-	void MoveForward(float Axis);
-	void MoveRight(float Axis);
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+		float Power;
 
-	bool bDead;
+	UPROPERTY(EditAnywhere)
+		float PowerTreshold;
+
+	UPROPERTY(EditAnywhere, Category = "UI HUD")
+                TSubclassOf<UUserWidget> PlayerPowerWidgetClass;
+        UUserWidget* PlayerPowerWidget;
+
+	UFUNCTION()
+		void OnBeginOverlap(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	
 
 protected:
 	// Called when the game starts or when spawned
@@ -47,5 +66,4 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 };

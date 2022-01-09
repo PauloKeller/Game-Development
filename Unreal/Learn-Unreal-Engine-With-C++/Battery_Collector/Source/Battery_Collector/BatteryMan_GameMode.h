@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameMode.h"
+#include "GameFramework/Actor.h"
+
 #include "BatteryMan_GameMode.generated.h"
 
 /**
@@ -12,6 +14,32 @@
 UCLASS()
 class BATTERY_COLLECTOR_API ABatteryMan_GameMode : public AGameMode
 {
-	GENERATED_BODY()
+  GENERATED_BODY()
+
+ public:
+  ABatteryMan_GameMode();
+
+  virtual void BeginPlay() override;
+  virtual void Tick(float DeltaTime) override;
+
+  void SpawnPlayerRecharge();
+
+  UPROPERTY(EditAnywhere) 
+	  TSubclassOf<APawn> PlayerRecharge;
+
+  float SpawnZ = 500.0f;
+
+  UPROPERTY(EditAnywhere)
+  float SpawnXMin;
+
+  UPROPERTY(EditAnywhere)
+  float SpawnXMax;
+
+  UPROPERTY(EditAnywhere)
+  float SpawnYMin;
+
+  UPROPERTY(EditAnywhere)
+  float SpawnYMax;
+
 	
 };
