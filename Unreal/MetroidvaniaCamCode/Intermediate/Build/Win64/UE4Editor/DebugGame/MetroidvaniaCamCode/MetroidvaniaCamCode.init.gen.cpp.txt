@@ -1,3 +1,0 @@
-C:\Users\Paulo\Documents\Workspace\Game-Development\Unreal\MetroidvaniaCamCode\Intermediate\Build\Win64\UE4Editor\DebugGame\MetroidvaniaCamCode\Definitions.MetroidvaniaCamCode.h
-D:\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-D:\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
