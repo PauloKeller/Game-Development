@@ -5,15 +5,23 @@ using UnityEngine;
 public class Entity : MonoBehaviour
 {
     [Header("Collision Info")]
+    public Transform attackCheck;
+    public float attackCheckRadius;
     [SerializeField] protected Transform groundTransform;
     [SerializeField] protected float groundDistance;
     [SerializeField] protected Transform wallTransform;
     [SerializeField] protected float wallDistance;
     [SerializeField] protected LayerMask groundLayerMask;
 
+    [Header("Knockback Info")]
+    [SerializeField] protected Vector2 knockBackDirection;
+    [SerializeField] protected float knockBackDuration;
+    protected bool isKnocked;
+
     #region Components
     public Animator animator { get; private set; }
     public Rigidbody2D entityRigidbody2D { get; private set; }
+    public EntityFX fx { get; private set; }
     #endregion
 
     public int facingDir { get; private set; } = 1;
@@ -25,12 +33,31 @@ public class Entity : MonoBehaviour
 
     protected virtual void Start()
     {
+        fx = GetComponent<EntityFX>();
         animator = GetComponentInChildren<Animator>();
         entityRigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     protected virtual void Update()
     { 
+    }
+
+    public virtual IEnumerator HitKnockback() 
+    { 
+        isKnocked = true;
+
+        entityRigidbody2D.velocity = new Vector2(knockBackDirection.x * -facingDir, knockBackDirection.y);
+
+        yield return new WaitForSeconds(knockBackDuration);
+        isKnocked = false;
+    }
+
+    public virtual void Damage()
+    {
+        fx.StartCoroutine(fx.FlashFX());
+        StartCoroutine(HitKnockback());
+
+        Debug.Log(gameObject.name + " was damaged!");
     }
 
     #region Collision
@@ -42,6 +69,7 @@ public class Entity : MonoBehaviour
     {
         Gizmos.DrawLine(groundTransform.position, new Vector3(groundTransform.position.x, groundTransform.position.y - groundDistance));
         Gizmos.DrawLine(wallTransform.position, new Vector3(wallTransform.position.x + wallDistance, wallTransform.position.y));
+        Gizmos.DrawWireSphere(attackCheck.position, attackCheckRadius);
     }
     #endregion
 
@@ -63,8 +91,19 @@ public class Entity : MonoBehaviour
     #endregion
 
     #region Velocity
+    public void SetZeroVelocity()
+    {
+        if (isKnocked)
+            return;
+
+        entityRigidbody2D.velocity = Vector2.zero;
+    }
+
     public void SetVelocity(float xVelocity, float yVelocity)
     {
+        if (isKnocked)
+            return;
+
         entityRigidbody2D.velocity = new Vector2(xVelocity, yVelocity);
         FlipController(xVelocity);
     }

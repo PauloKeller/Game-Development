@@ -12,7 +12,7 @@ public class PlayerIdleState : PlayerGroundedState
     {
         base.Enter();
 
-        playerRigidbody2D.velocity = Vector2.zero;
+        player.SetZeroVelocity();
     }
 
     public override void Exit()
