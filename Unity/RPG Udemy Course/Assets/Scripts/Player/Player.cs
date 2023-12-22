@@ -18,6 +18,7 @@ public class Player : Entity
     public float dashDir { get; private set; }
 
     public SkillManager skillManager { get; private set; }
+    public GameObject sword;
 
     #region States
     public PlayerStateMachine stateMachine { get; private set; }
@@ -30,6 +31,8 @@ public class Player : Entity
     public PlayerDashState dashState { get; private set; }
     public PlayerPrimaryAttackState primaryAttackState { get; private set; }
     public PlayerCounterAttackState counterAttackState { get; private set; }
+    public PlayerAimSwordState aimSwordState { get; private set; }
+    public PlayerCatchSwordState catchSwordState { get; private set; }
     #endregion
 
     protected override void Awake()
@@ -49,6 +52,8 @@ public class Player : Entity
         wallJumpState = new PlayerWallJumpState(this, stateMachine, "Jump");
         primaryAttackState = new PlayerPrimaryAttackState(this, stateMachine, "Attack");
         counterAttackState = new PlayerCounterAttackState(this, stateMachine, "CounterAttack");
+        catchSwordState = new PlayerCatchSwordState(this, stateMachine, "CatchSword");
+        aimSwordState = new PlayerAimSwordState(this, stateMachine, "AimSword");
     }
 
     protected override void Start()
@@ -65,6 +70,16 @@ public class Player : Entity
         stateMachine.currentState.Update();
 
         CheckForDashInput();
+    }
+
+    public void AssingNewSword(GameObject sword)
+    {
+        this.sword = sword;
+    }
+
+    public void ClearTheSword()
+    {
+        Destroy(sword);
     }
 
     public IEnumerator BusyFor(float seconds) 
