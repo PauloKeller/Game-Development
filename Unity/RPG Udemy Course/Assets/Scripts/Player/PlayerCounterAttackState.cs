@@ -13,7 +13,7 @@ public class PlayerCounterAttackState : PlayerState
         base.Enter();
 
         stateTimer = player.counterAttackDuration;
-        player.animator.SetBool("SuccessfulCounterAttack", false);
+        player.anim.SetBool("SuccessfulCounterAttack", false);
     }
 
     public override void Exit()
@@ -36,7 +36,7 @@ public class PlayerCounterAttackState : PlayerState
                 if (hit.GetComponent<Enemy>().CanBeStunned()) 
                 {
                     stateTimer = 10;
-                    player.animator.SetBool("SuccessfulCounterAttack", true);
+                    player.anim.SetBool("SuccessfulCounterAttack", true);
 
                 }
             }

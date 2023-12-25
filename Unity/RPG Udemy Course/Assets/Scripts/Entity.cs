@@ -19,7 +19,7 @@ public class Entity : MonoBehaviour
     protected bool isKnocked;
 
     #region Components
-    public Animator animator { get; private set; }
+    public Animator anim { get; private set; }
     public Rigidbody2D entityRigidbody2D { get; private set; }
     public EntityFX fx { get; private set; }
     #endregion
@@ -34,7 +34,7 @@ public class Entity : MonoBehaviour
     protected virtual void Start()
     {
         fx = GetComponent<EntityFX>();
-        animator = GetComponentInChildren<Animator>();
+        anim = GetComponentInChildren<Animator>();
         entityRigidbody2D = GetComponent<Rigidbody2D>();
     }
 
@@ -56,8 +56,6 @@ public class Entity : MonoBehaviour
     {
         fx.StartCoroutine(fx.FlashFX());
         StartCoroutine(HitKnockback());
-
-        Debug.Log(gameObject.name + " was damaged!");
     }
 
     #region Collision

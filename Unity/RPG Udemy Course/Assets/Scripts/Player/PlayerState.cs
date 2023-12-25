@@ -22,7 +22,7 @@ public class PlayerState
 
     public virtual void Enter() 
     {
-        player.animator.SetBool(animationBoolName, true);
+        player.anim.SetBool(animationBoolName, true);
         playerRigidbody2D = player.entityRigidbody2D;
         triggerCalled = false;
     }
@@ -32,12 +32,12 @@ public class PlayerState
         stateTimer -= Time.deltaTime;
         yInput = Input.GetAxisRaw("Vertical");
         xInput = Input.GetAxisRaw("Horizontal");
-        player.animator.SetFloat("yVelocity", playerRigidbody2D.velocity.y);
+        player.anim.SetFloat("yVelocity", playerRigidbody2D.velocity.y);
     }
 
     public virtual void Exit() 
     {
-        player.animator.SetBool(animationBoolName, false);
+        player.anim.SetBool(animationBoolName, false);
     }
 
     public virtual void AnimationFinishTrigger()
