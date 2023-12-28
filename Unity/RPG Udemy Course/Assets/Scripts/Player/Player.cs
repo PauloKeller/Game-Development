@@ -34,6 +34,7 @@ public class Player : Entity
     public PlayerCounterAttackState counterAttackState { get; private set; }
     public PlayerAimSwordState aimSwordState { get; private set; }
     public PlayerCatchSwordState catchSwordState { get; private set; }
+    public PlayerBlackholeState blackholeState { get; private set; }
     #endregion
 
     protected override void Awake()
@@ -55,6 +56,7 @@ public class Player : Entity
         counterAttackState = new PlayerCounterAttackState(this, stateMachine, "CounterAttack");
         catchSwordState = new PlayerCatchSwordState(this, stateMachine, "CatchSword");
         aimSwordState = new PlayerAimSwordState(this, stateMachine, "AimSword");
+        blackholeState = new PlayerBlackholeState(this, stateMachine, "Jump");
     }
 
     protected override void Start()
@@ -71,6 +73,9 @@ public class Player : Entity
         stateMachine.currentState.Update();
 
         CheckForDashInput();
+
+        if (Input.GetKeyDown(KeyCode.F))
+            skillManager.crystal.CanUseSkill();
     }
 
     public void AssingNewSword(GameObject sword)

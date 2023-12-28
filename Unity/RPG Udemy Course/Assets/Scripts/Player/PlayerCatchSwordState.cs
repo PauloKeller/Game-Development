@@ -20,7 +20,7 @@ public class PlayerCatchSwordState : PlayerState
         else if (player.transform.position.x < sword.position.x && player.facingDir == -1)
             player.Flip();
 
-        playerRigidbody2D.velocity = new Vector2(player.swordReturnImpact * -player.facingDir, playerRigidbody2D.velocity.y);
+        rb.velocity = new Vector2(player.swordReturnImpact * -player.facingDir, rb.velocity.y);
     }
 
     public override void Exit()

@@ -12,7 +12,7 @@ public class PlayerJumpState : PlayerState
     {
         base.Enter();
 
-        playerRigidbody2D.velocity = new Vector2(playerRigidbody2D.velocity.x, player.jumpForce);
+        rb.velocity = new Vector2(rb.velocity.x, player.jumpForce);
     }
 
     public override void Exit()
@@ -24,7 +24,7 @@ public class PlayerJumpState : PlayerState
     {
         base.Update();
 
-        if (playerRigidbody2D.velocity.y < 0 )
+        if (rb.velocity.y < 0 )
             stateMachine.ChangeState(player.airState);
     }
 }
