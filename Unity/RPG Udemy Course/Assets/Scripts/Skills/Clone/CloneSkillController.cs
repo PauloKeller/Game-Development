@@ -13,6 +13,9 @@ public class CloneSkillController : MonoBehaviour
     [SerializeField] private Transform attackCheck;
     [SerializeField] private float attackCheckRadius = 0.8f;
     private Transform closestEnemy;
+    private bool canDuplicateClone;
+    private float chanceToDuplicate;
+    private int facingDir = 1;
 
     private void Awake()
     {
@@ -33,7 +36,7 @@ public class CloneSkillController : MonoBehaviour
         }
     }
 
-    public void SetupClone(Transform newTransform, float cloneDuration, bool canAttack, Vector3 offset, Transform closestEnemy)
+    public void SetupClone(Transform newTransform, float cloneDuration, bool canAttack, Vector3 offset, Transform closestEnemy, bool canDuplicateClone, float chanceToDuplicate)
     {
         if (canAttack) 
         {
@@ -44,6 +47,8 @@ public class CloneSkillController : MonoBehaviour
         cloneTimer = cloneDuration;
 
         this.closestEnemy = closestEnemy;
+        this.canDuplicateClone = canDuplicateClone;
+        this.chanceToDuplicate = chanceToDuplicate;
         FaceClosesTarget();
     }
 
@@ -59,7 +64,17 @@ public class CloneSkillController : MonoBehaviour
         foreach (var hit in colliders)
         {
             if (hit.GetComponent<Enemy>() != null)
+            {
                 hit.GetComponent<Enemy>().Damage();
+
+                if (canDuplicateClone)
+                {
+                    if (Random.Range(0, 100) < chanceToDuplicate)
+                    {
+                        SkillManager.instance.clone.CreateClone(hit.transform, new Vector3(.5f * facingDir, 0));
+                    }
+                }
+            }
         }
     }
 
@@ -68,7 +83,10 @@ public class CloneSkillController : MonoBehaviour
         if (closestEnemy != null)
         {
             if (transform.position.x > closestEnemy.position.x)
+            {
+                facingDir = -1;
                 transform.Rotate(0, 180, 0);
+            }
         }
     }
 }
