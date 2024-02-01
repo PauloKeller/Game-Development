@@ -30,6 +30,8 @@ public class Entity : MonoBehaviour
     public int facingDir { get; private set; } = 1;
     protected bool facingRight = true;
 
+    public System.Action onFlipped;
+
     protected virtual void Awake()
     { 
     }
@@ -48,6 +50,16 @@ public class Entity : MonoBehaviour
     { 
     }
 
+    public virtual void SlowEntityBy(float slowPercentage, float slowDuration)
+    { 
+
+    }
+
+    protected virtual void ReturnDefaultSpeed()
+    {
+        anim.speed = 1;
+    }
+
     public virtual IEnumerator HitKnockback() 
     { 
         isKnocked = true;
@@ -58,11 +70,7 @@ public class Entity : MonoBehaviour
         isKnocked = false;
     }
 
-    public virtual void DamageEffect()
-    {
-        fx.StartCoroutine(fx.FlashFX());
-        StartCoroutine(HitKnockback());
-    }
+    public virtual void DamageImpact() => StartCoroutine(HitKnockback());
 
     #region Collision
     public virtual bool IsGroundDetected() => Physics2D.Raycast(groundTransform.position, Vector2.down, groundDistance, groundLayerMask);
@@ -83,6 +91,9 @@ public class Entity : MonoBehaviour
         facingDir = facingDir * -1;
         facingRight = !facingRight;
         transform.Rotate(0, 180, 0);
+
+        if (onFlipped != null)
+            onFlipped();
     }
 
     public void FlipController(float xVelocity)
@@ -112,14 +123,6 @@ public class Entity : MonoBehaviour
         FlipController(xVelocity);
     }
     #endregion
-
-    public void MakeTransparent(bool isTransparent)
-    {
-        if (isTransparent)
-            sr.color = Color.clear;
-        else
-            sr.color = Color.white;
-    }
 
     public virtual void Die()
     { 
