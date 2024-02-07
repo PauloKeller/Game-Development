@@ -140,16 +140,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength:
-    baseValue: 5
+    baseValue: 0
     modifiers: 
   agility:
     baseValue: 0
     modifiers: 
   intelligence:
-    baseValue: 1
+    baseValue: 0
     modifiers: 
   vitality:
-    baseValue: 5
+    baseValue: 0
     modifiers: 
   damage:
     baseValue: 10
@@ -170,7 +170,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   magicResistance:
-    baseValue: 1
+    baseValue: 0
     modifiers: 
   fireDamage:
     baseValue: 0
@@ -187,6 +187,8 @@ MonoBehaviour:
   ailmentsDuration: 4
   shockStrikePrefab: {fileID: 2318425317815534058, guid: b361f671ea139f140943bc57e6b5aedb, type: 3}
   currentHealth: 0
+  level: 10
+  percentageModifier: 0.7
 --- !u!70 &4535788254914912674
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -324,7 +326,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1257136285
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: -10
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -862,7 +864,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1257136285
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -85727878, guid: 687df074731fbf744b668d2275dbb675, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

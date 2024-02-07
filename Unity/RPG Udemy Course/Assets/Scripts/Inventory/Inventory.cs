@@ -63,24 +63,27 @@ public class Inventory : MonoBehaviour
         }
 
         if (oldEquipment != null)
-        { 
+        {
             UnequipItem(oldEquipment);
             AddItem(oldEquipment);
         }
 
         equipment.Add(newItem);
         equipmentDictionary.Add(newEquipment, newItem);
+        newEquipment.AddModifiers();
+
         RemoveItem(_item);
 
         UpdateSlotUI();
     }
 
-    private void UnequipItem(ItemDataEquipment itemToRemove)
+    public void UnequipItem(ItemDataEquipment itemToRemove)
     {
         if (equipmentDictionary.TryGetValue(itemToRemove, out InventoryItem value))
         {
             equipment.Remove(value);
             equipmentDictionary.Remove(itemToRemove);
+            itemToRemove.RemoveModifiers();
         }
     }
 
@@ -187,5 +190,40 @@ public class Inventory : MonoBehaviour
             ItemData newItem = inventory[inventory.Count - 1].data;
             RemoveItem(newItem);
         }
+    }
+
+    public bool CanCraft(ItemDataEquipment itemToCraft, List<InventoryItem> requiredMaterials)
+    {
+        List<InventoryItem> materialsToRemove = new List<InventoryItem>();
+
+        for (int i = 0; i < requiredMaterials.Count; i++)
+        {
+            if (stashDictionary.TryGetValue(requiredMaterials[i].data, out InventoryItem stashValue))
+            {
+                if (stashValue.stackSize < requiredMaterials[i].stackSize)
+                {
+                    Debug.Log("not enough materials");
+                    return false;
+                }
+                else
+                { 
+                    materialsToRemove.Add(stashValue);
+                }
+            }
+            else 
+            {
+                Debug.Log("not enough materials");
+                return false;
+            }
+        }
+
+        for (int i = 0; i < materialsToRemove.Count; i++)
+        {
+            RemoveItem(materialsToRemove[i].data);
+        }
+
+        AddItem(itemToCraft);
+        Debug.Log("Here is your item " + itemToCraft.name);
+        return true;
     }
 }
