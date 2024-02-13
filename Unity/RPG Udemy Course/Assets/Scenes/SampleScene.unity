@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 0
-  swordType: 3
+  swordType: 1
   bounceAmount: 4
   bounceGravity: 1
   bounceSpeed: 20
@@ -1079,7 +1079,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f0e454850e44b7429ee2eee4e9391f0, type: 2}
   - {fileID: 11400000, guid: 2ca4319ace2a99043a84266dca556172, type: 2}
   dropPrefab: {fileID: 5779005869838711288, guid: d9b55346125695749ae7e9af1d9df622, type: 3}
-  item: {fileID: 11400000, guid: 3f0e454850e44b7429ee2eee4e9391f0, type: 2}
 --- !u!70 &119897519
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1325,7 +1324,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f0e454850e44b7429ee2eee4e9391f0, type: 2}
   - {fileID: 11400000, guid: 2ca4319ace2a99043a84266dca556172, type: 2}
   dropPrefab: {fileID: 5779005869838711288, guid: d9b55346125695749ae7e9af1d9df622, type: 3}
-  item: {fileID: 11400000, guid: 3f0e454850e44b7429ee2eee4e9391f0, type: 2}
 --- !u!70 &126622113
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3703,7 +3701,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f0e454850e44b7429ee2eee4e9391f0, type: 2}
   - {fileID: 11400000, guid: 2ca4319ace2a99043a84266dca556172, type: 2}
   dropPrefab: {fileID: 5779005869838711288, guid: d9b55346125695749ae7e9af1d9df622, type: 3}
-  item: {fileID: 11400000, guid: 3f0e454850e44b7429ee2eee4e9391f0, type: 2}
 --- !u!70 &457044493
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4340,7 +4337,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -33.65045, y: -2.331537, z: -9.841307}
+  m_LocalPosition: {x: -33.50388, y: -2.331537, z: -9.841307}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4469,6 +4466,7 @@ GameObject:
   - component: {fileID: 557204987}
   - component: {fileID: 557204989}
   - component: {fileID: 557204990}
+  - component: {fileID: 557204991}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -4661,7 +4659,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   fireDamage:
-    baseValue: 10
+    baseValue: 0
     modifiers: 
   iceDamage:
     baseValue: 0
@@ -4675,6 +4673,23 @@ MonoBehaviour:
   ailmentsDuration: 4
   shockStrikePrefab: {fileID: 2318425317815534058, guid: b361f671ea139f140943bc57e6b5aedb, type: 3}
   currentHealth: 0
+--- !u!114 &557204991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557204984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fcc70dfe3f049346aebedf997357c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  possibleItemDrop: 0
+  possibleDrop: []
+  dropPrefab: {fileID: 5779005869838711288, guid: d9b55346125695749ae7e9af1d9df622, type: 3}
+  chanceToLooseItems: 20
+  chanceToLooseMaterials: 75
 --- !u!1 &559832274
 GameObject:
   m_ObjectHideFlags: 0
@@ -5879,8 +5894,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cb4e6edb99d90aa45a0c5802ee294b8d, type: 2}
   - {fileID: 11400000, guid: 3f0e454850e44b7429ee2eee4e9391f0, type: 2}
   - {fileID: 11400000, guid: 2ca4319ace2a99043a84266dca556172, type: 2}
+  - {fileID: 11400000, guid: 22c975b8e9bcdec4cbce8ed81bc9b435, type: 2}
+  - {fileID: 11400000, guid: 9e6a042f0f884314fa209635a86c6ace, type: 2}
   dropPrefab: {fileID: 5779005869838711288, guid: d9b55346125695749ae7e9af1d9df622, type: 3}
-  item: {fileID: 11400000, guid: 3f0e454850e44b7429ee2eee4e9391f0, type: 2}
 --- !u!70 &786130955
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -8431,7 +8447,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f0e454850e44b7429ee2eee4e9391f0, type: 2}
   - {fileID: 11400000, guid: 2ca4319ace2a99043a84266dca556172, type: 2}
   dropPrefab: {fileID: 5779005869838711288, guid: d9b55346125695749ae7e9af1d9df622, type: 3}
-  item: {fileID: 11400000, guid: 3f0e454850e44b7429ee2eee4e9391f0, type: 2}
 --- !u!1 &1057425597
 GameObject:
   m_ObjectHideFlags: 0
@@ -9537,7 +9552,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f0e454850e44b7429ee2eee4e9391f0, type: 2}
   - {fileID: 11400000, guid: 2ca4319ace2a99043a84266dca556172, type: 2}
   dropPrefab: {fileID: 5779005869838711288, guid: d9b55346125695749ae7e9af1d9df622, type: 3}
-  item: {fileID: 11400000, guid: 3f0e454850e44b7429ee2eee4e9391f0, type: 2}
 --- !u!70 &1207575319
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -10531,6 +10545,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fca3214a3348d96479a91128520415bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingItems:
+  - {fileID: 11400000, guid: 991a40ecf455722418067bb41669a148, type: 2}
+  - {fileID: 11400000, guid: 991a40ecf455722418067bb41669a148, type: 2}
+  - {fileID: 11400000, guid: 0db73604ab6b9b549a8251f9c046457f, type: 2}
+  - {fileID: 11400000, guid: cb4e6edb99d90aa45a0c5802ee294b8d, type: 2}
+  - {fileID: 11400000, guid: 3f0e454850e44b7429ee2eee4e9391f0, type: 2}
+  - {fileID: 11400000, guid: 2ca4319ace2a99043a84266dca556172, type: 2}
+  - {fileID: 11400000, guid: 991a40ecf455722418067bb41669a148, type: 2}
+  - {fileID: 11400000, guid: 63436a0da7e0fc941814597566bc66d6, type: 2}
+  - {fileID: 11400000, guid: 83fe2da6b4916c64f96ecf4aebbd23c8, type: 2}
+  - {fileID: 11400000, guid: 39d55f7285fe1944db5d1740d54bf8f7, type: 2}
+  - {fileID: 11400000, guid: 9e6a042f0f884314fa209635a86c6ace, type: 2}
+  - {fileID: 11400000, guid: 22c975b8e9bcdec4cbce8ed81bc9b435, type: 2}
+  - {fileID: 11400000, guid: ab48c64f5d7f0114dbf1f8c85624ed05, type: 2}
+  - {fileID: 11400000, guid: 135ddb5ae43753e43a8f74a537716b7e, type: 2}
   equipment: []
   inventory: []
   stash: []
@@ -12466,7 +12495,7 @@ Transform:
   m_GameObject: {fileID: 2044083844}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -33.65045, y: -2.331537, z: -9.841307}
+  m_LocalPosition: {x: -33.50388, y: -2.331537, z: -9.841307}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

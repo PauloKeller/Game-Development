@@ -1,5 +1,7 @@
-using System.Threading;
+using System;
+using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class CharacterStats : MonoBehaviour
 {
@@ -44,8 +46,7 @@ public class CharacterStats : MonoBehaviour
     public int currentHealth;
 
     public System.Action onHealthChanged;
-    protected bool isDead;
-
+    public bool isDead { get; private set; }
     protected virtual void Start()
     {
         critPower.SetDefaultValue(150);
@@ -74,6 +75,20 @@ public class CharacterStats : MonoBehaviour
             ApplyIgniteDamage();
     }
 
+    public virtual void IncreaseStatBy(int _modifier, float _duration, Stat _statToModify)
+    {
+        StartCoroutine(StatModCoroutine(_modifier, _duration, _statToModify));
+    }
+
+    private IEnumerator StatModCoroutine(int _modifier, float _duration, Stat _statToModify)
+    {
+        _statToModify.AddModifier(_modifier);
+
+        yield return new WaitForSeconds(_duration);
+
+        _statToModify.RemoveModifier(_modifier);
+    }
+
     public virtual void DoDamage(CharacterStats targetStats)
     {
         if (TargetCanAvoidAttack(targetStats))
@@ -88,7 +103,9 @@ public class CharacterStats : MonoBehaviour
 
         totalDamage = CheckTargetArmor(targetStats, totalDamage);
         targetStats.TakeDamage(totalDamage);
-        //DoMagicalDamage(targetStats);
+
+        // This enableds magic effect on primary attack, remove if you don't want to apply magic hit
+        DoMagicalDamage(targetStats);  
     }
 
     #region Magical damage and ailments
@@ -131,8 +148,6 @@ public class CharacterStats : MonoBehaviour
 
         while (!canApplyIgnite && !canApplyChill && !canApplyShock)
         {
-            Debug.Log(Random.value);
-
             if (Random.value < .3f && fireDamage > 0)
             {
                 canApplyIgnite = true;
@@ -167,7 +182,7 @@ public class CharacterStats : MonoBehaviour
     public void ApplyAilments(bool ignite, bool chill, bool shock)
     {
         bool canApplyIgnite = !isIgnited && !isChilled && !isShocked;
-        bool canApplyChill = !isIgnited && !isChilled && isShocked;
+        bool canApplyChill = !isIgnited && !isChilled && !isShocked;
         bool canApplyShock = !isIgnited && !isChilled;
 
         if (ignite && canApplyIgnite)
@@ -262,6 +277,17 @@ public class CharacterStats : MonoBehaviour
 
         if (currentHealth < 0 && !isDead)
             Die();
+    }
+
+    public virtual void IncreaseHealthBy(int _amount)
+    {
+        currentHealth += _amount;
+
+        if (currentHealth > GetMaxHealthValue())
+            currentHealth = GetMaxHealthValue();
+
+        if (onHealthChanged != null)
+            onHealthChanged();
     }
 
     protected virtual void DecreaseHealthBy(int damage)

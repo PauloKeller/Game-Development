@@ -1,5 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 public class SwordSkillController : MonoBehaviour
@@ -45,7 +45,7 @@ public class SwordSkillController : MonoBehaviour
     }
 
     private void DestroyMe()
-    { 
+    {
         Destroy(gameObject);
     }
 
@@ -76,7 +76,7 @@ public class SwordSkillController : MonoBehaviour
     }
 
     public void SetupPierce(int pierceAmount)
-    { 
+    {
         this.pierceAmount = pierceAmount;
     }
 
@@ -206,6 +206,11 @@ public class SwordSkillController : MonoBehaviour
     {
         player.characterStats.DoDamage(enemy.GetComponent<CharacterStats>());
         enemy.StartCoroutine(enemy.FreezeTimerFor(freezeTimeDuration));
+
+        ItemDataEquipment equipedAmulet = Inventory.instance.GetEquipment(EquipmentType.Amulet);
+
+        if (equipedAmulet != null)
+            equipedAmulet.Effect(enemy.transform);
     }
 
     private void SetupTargetsForBounce(Collider2D collision)
@@ -247,7 +252,7 @@ public class SwordSkillController : MonoBehaviour
 
         if (isBouncing && enemyTarget.Count > 0)
             return;
-        
+
         anim.SetBool("Rotation", false);
         transform.parent = collision.transform;
     }
