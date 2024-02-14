@@ -4629,13 +4629,13 @@ MonoBehaviour:
     baseValue: 2
     modifiers: 
   agility:
-    baseValue: 7
+    baseValue: 0
     modifiers: 
   intelligence:
     baseValue: 1
     modifiers: 
   vitality:
-    baseValue: 5
+    baseValue: 0
     modifiers: 
   damage:
     baseValue: 10
@@ -4650,7 +4650,7 @@ MonoBehaviour:
     baseValue: 100
     modifiers: 
   armor:
-    baseValue: 20
+    baseValue: 0
     modifiers: 
   evasion:
     baseValue: 0
@@ -10560,6 +10560,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 22c975b8e9bcdec4cbce8ed81bc9b435, type: 2}
   - {fileID: 11400000, guid: ab48c64f5d7f0114dbf1f8c85624ed05, type: 2}
   - {fileID: 11400000, guid: 135ddb5ae43753e43a8f74a537716b7e, type: 2}
+  - {fileID: 11400000, guid: 4fe7ee36fd55b584c8f0ad3c8776d513, type: 2}
+  - {fileID: 11400000, guid: 271d17fdf96437440b837549c8bf76e3, type: 2}
   equipment: []
   inventory: []
   stash: []
