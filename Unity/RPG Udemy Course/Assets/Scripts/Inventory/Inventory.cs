@@ -22,10 +22,12 @@ public class Inventory : MonoBehaviour
     [SerializeField] private Transform invetorySlotParent;
     [SerializeField] private Transform stashSlotParent;
     [SerializeField] private Transform equipmentSlotParent;
+    [SerializeField] private Transform statSlotParent;
 
     private UIItemSlot[] inventoryItemSlot;
     private UIItemSlot[] stashItemSlot;
     private UIEquipmentSlot[] equipmentSlot;
+    private UIStatSlot[] statSlot;
 
     [Header("Items cooldown")]
     private float lastTimeUsedFlask;
@@ -56,6 +58,7 @@ public class Inventory : MonoBehaviour
         inventoryItemSlot = invetorySlotParent.GetComponentsInChildren<UIItemSlot>();
         stashItemSlot = stashSlotParent.GetComponentsInChildren<UIItemSlot>();
         equipmentSlot = equipmentSlotParent.GetComponentsInChildren<UIEquipmentSlot>();
+        statSlot = statSlotParent.GetComponentsInChildren<UIStatSlot>();
 
         AddStartingItems();
     }
@@ -132,9 +135,14 @@ public class Inventory : MonoBehaviour
             inventoryItemSlot[i].UpdateSlot(inventory[i]);
         }
 
-        for (int i = 0; i < stash.Count; i++) 
+        for (int i = 0; i < stash.Count; i++)
         {
             stashItemSlot[i].UpdateSlot(stash[i]);
+        }
+
+        for (int i = 0; i < statSlot.Length; i++)
+        {
+            statSlot[i].UpdateStatValueUI();
         }
     }
 
@@ -200,6 +208,18 @@ public class Inventory : MonoBehaviour
         }
 
         UpdateSlotUI();
+    }
+
+    public bool CanAddItem()
+    {
+        if (inventory.Count >= inventoryItemSlot.Length)
+        {
+            Debug.Log("No more space");
+
+            return false;
+        }
+
+        return true;
     }
 
     private void Update()
