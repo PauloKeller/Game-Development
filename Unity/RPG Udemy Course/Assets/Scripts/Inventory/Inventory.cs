@@ -148,7 +148,7 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(ItemData item)
     {
-        if (item.itemType == ItemType.Equipment)
+        if (item.itemType == ItemType.Equipment && CanAddItem())
             AddToInventory(item);
         else if (item.itemType == ItemType.Material)
             AddToStash(item);
@@ -214,8 +214,6 @@ public class Inventory : MonoBehaviour
     {
         if (inventory.Count >= inventoryItemSlot.Length)
         {
-            Debug.Log("No more space");
-
             return false;
         }
 
