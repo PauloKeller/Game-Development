@@ -34,4 +34,6 @@ MonoBehaviour:
   fireDamage: 0
   iceDamage: 0
   lightingDamage: 0
-  craftingMaterials: []
+  craftingMaterials:
+  - data: {fileID: 11400000, guid: 0db73604ab6b9b549a8251f9c046457f, type: 2}
+    stackSize: 50
