@@ -83,7 +83,7 @@ public class Player : Entity
 
         CheckForDashInput();
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && skillManager.crystal.crystalUnlocked)
             skillManager.crystal.CanUseSkill();
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -133,6 +133,9 @@ public class Player : Entity
     public void CheckForDashInput()
     {
         if (IsWallDetected())
+            return;
+
+        if (!skillManager.dash.dashUnlocked)
             return;
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && SkillManager.instance.dash.CanUseSkill())

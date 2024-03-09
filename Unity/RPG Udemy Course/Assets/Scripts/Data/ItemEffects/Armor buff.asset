@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c515a3fecb48af64ba8c333b91b1acba, type: 3}
   m_Name: Armor buff
   m_EditorClassIdentifier: 
+  effectDescription: Gives 50 armor for 7 seconds
   buffType: 8
   buffAmount: 50
   buffDuration: 7

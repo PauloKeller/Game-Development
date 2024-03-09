@@ -22,13 +22,13 @@ public class PlayerGroundedState : PlayerState
     {
         base.Update();
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && player.skillManager.blackhole.blackholeUnlocked)
             stateMachine.ChangeState(player.blackholeState);
 
-        if (Input.GetKeyDown(KeyCode.Mouse1) && HasNoSword())
+        if (Input.GetKeyDown(KeyCode.Mouse1) && HasNoSword() && player.skillManager.sword.swordUnlocked)
             stateMachine.ChangeState(player.aimSwordState);
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && player.skillManager.parry.parryUnlocked)
             stateMachine.ChangeState(player.counterAttackState);
 
         if (Input.GetKeyDown(KeyCode.Mouse0))

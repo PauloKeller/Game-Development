@@ -14,8 +14,10 @@ public class ItemDataEquipment : ItemData
 {
     public EquipmentType equipmentType;
 
+    [Header("Unique effect")]
     public float itemCooldown;
     public ItemEffect[] itemEffects;
+
 
     [Header("Major stats")]
     public int strength;
@@ -121,6 +123,16 @@ public class ItemDataEquipment : ItemData
         AddItemDescription(fireDamage, "Fire Damage");
         AddItemDescription(iceDamage, "Ice Damage");
         AddItemDescription(lightingDamage, "Lighting Dmg.");
+
+        for (int i = 0; i < itemEffects.Length; i++)
+        {
+            if (itemEffects[i].effectDescription.Length > 0)
+            {
+                sb.AppendLine();
+                sb.AppendLine($"Unique: {itemEffects[i].effectDescription}");
+                descriptionLength++;
+            }
+        }
 
         if (descriptionLength < 5)
         {

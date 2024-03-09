@@ -10,33 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b08d84a9f60335a448cb519298f8efa9, type: 3}
-  m_Name: Ice and Fire swords
+  m_Name: Rogue's jacket
   m_EditorClassIdentifier: 
   itemType: 1
-  itemName: Ice and Fire swords
-  icon: {fileID: -1943397117, guid: be55291aae08d434db3da3b59db3ab4a, type: 3}
-  dropChance: 6
-  equipmentType: 0
+  itemName: Rogue's jacket
+  icon: {fileID: 957708663, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  dropChance: 0
+  equipmentType: 1
   itemCooldown: 0
   itemEffects:
-  - {fileID: 11400000, guid: acb803ae2ae144746a2a819d0abe191b, type: 2}
-  - {fileID: 11400000, guid: 23f983e7906dc8544ac752e92470d31b, type: 2}
+  - {fileID: 11400000, guid: 8feee1ed95605114c8a7b4b8a5eb4bc5, type: 2}
+  itemEffectDescription: 'Unique: Increase evasion on each take hit.'
   strength: 0
-  agility: 0
+  agility: 5
   intelligence: 0
   vitality: 0
   damage: 0
   critChance: 0
   critPower: 0
-  health: 0
+  health: 50
   armor: 0
-  evasion: 0
+  evasion: 5
   magicResistance: 0
-  fireDamage: 5
-  iceDamage: 7
+  fireDamage: 0
+  iceDamage: 0
   lightingDamage: 0
   craftingMaterials:
   - data: {fileID: 11400000, guid: 0db73604ab6b9b549a8251f9c046457f, type: 2}
-    stackSize: 5
+    stackSize: 15
   - data: {fileID: 11400000, guid: 991a40ecf455722418067bb41669a148, type: 2}
-    stackSize: 5
+    stackSize: 15
