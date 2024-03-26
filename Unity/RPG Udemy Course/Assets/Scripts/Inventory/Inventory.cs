@@ -1,10 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class Inventory : MonoBehaviour, ISaveManager
 {
@@ -40,14 +36,15 @@ public class Inventory : MonoBehaviour, ISaveManager
     private float armorCooldown;
 
     [Header("Data base")]
+    public List<ItemData> itemDataBase;
     public List<InventoryItem> loadedItems;
     public List<ItemDataEquipment> loadedEquipment;
 
     private void Awake()
     {
-         if (instance == null) 
+        if (instance == null)
             instance = this;
-         else
+        else
             Destroy(gameObject);
     }
 
@@ -77,7 +74,7 @@ public class Inventory : MonoBehaviour, ISaveManager
             EquipItem(item);
         }
 
-        if (loadedItems.Count > 0) 
+        if (loadedItems.Count > 0)
         {
             foreach (InventoryItem item in loadedItems)
             {
@@ -200,7 +197,7 @@ public class Inventory : MonoBehaviour, ISaveManager
             inventory.Add(newItem);
             inventoryDictionary.Add(item, newItem);
         }
-    }    
+    }
     private void AddToStash(ItemData item)
     {
         if (stashDictionary.TryGetValue(item, out InventoryItem value))
@@ -215,7 +212,7 @@ public class Inventory : MonoBehaviour, ISaveManager
         }
     }
 
-    public void RemoveItem(ItemData item) 
+    public void RemoveItem(ItemData item)
     {
         if (inventoryDictionary.TryGetValue(item, out InventoryItem value))
         {
@@ -275,11 +272,11 @@ public class Inventory : MonoBehaviour, ISaveManager
                     return false;
                 }
                 else
-                { 
+                {
                     materialsToRemove.Add(stashValue);
                 }
             }
-            else 
+            else
             {
                 Debug.Log("not enough materials");
                 return false;
@@ -352,7 +349,7 @@ public class Inventory : MonoBehaviour, ISaveManager
     {
         foreach (KeyValuePair<string, int> pair in _data.inventory)
         {
-            foreach (var item in GetItemDataBase())
+            foreach (var item in itemDataBase)
             {
                 if (item != null && item.itemId == pair.Key)
                 {
@@ -364,9 +361,9 @@ public class Inventory : MonoBehaviour, ISaveManager
             }
         }
 
-        foreach (string loadedItemId in _data.equipmentId) 
+        foreach (string loadedItemId in _data.equipmentId)
         {
-            foreach (var item in GetItemDataBase())
+            foreach (var item in itemDataBase)
             {
                 if (item != null && loadedItemId == item.itemId)
                 {
@@ -381,7 +378,7 @@ public class Inventory : MonoBehaviour, ISaveManager
         _data.inventory.Clear();
         _data.equipmentId.Clear();
 
-        foreach (KeyValuePair<ItemData, InventoryItem> pair in inventoryDictionary) 
+        foreach (KeyValuePair<ItemData, InventoryItem> pair in inventoryDictionary)
         {
             _data.inventory.Add(pair.Key.itemId, pair.Value.stackSize);
         }
@@ -397,8 +394,13 @@ public class Inventory : MonoBehaviour, ISaveManager
         }
     }
 
+#if UNITY_EDITOR
+    [ContextMenu("Fill up item data base")]
+    private void FillUpItemDataBase() => itemDataBase = new List<ItemData>(GetItemDataBase()); 
+
     private List<ItemData> GetItemDataBase()
-    { 
+    {
+
         List<ItemData> itemDataBase = new List<ItemData>();
         string[] assetNames = AssetDatabase.FindAssets("", new[] { "Assets/Scripts/Data/Items" });
 
@@ -411,4 +413,6 @@ public class Inventory : MonoBehaviour, ISaveManager
 
         return itemDataBase;
     }
+#endif
+
 }

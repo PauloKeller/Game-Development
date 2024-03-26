@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting.ReorderableList;
-using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class UIEquipmentSlot : UIItemSlot

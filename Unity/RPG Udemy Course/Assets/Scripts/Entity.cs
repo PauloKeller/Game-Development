@@ -13,15 +13,16 @@ public class Entity : MonoBehaviour
     [SerializeField] protected float wallDistance;
     [SerializeField] protected LayerMask groundLayerMask;
 
+    public int knockbackDir { get; private set; }
+
     [Header("Knockback Info")]
-    [SerializeField] protected Vector2 knockBackDirection;
+    [SerializeField] protected Vector2 knockBackPower;
     [SerializeField] protected float knockBackDuration;
     protected bool isKnocked;
 
     #region Components
     public Animator anim { get; private set; }
     public Rigidbody2D entityRigidbody2D { get; private set; }
-    public EntityFX fx { get; private set; }
     public SpriteRenderer sr { get; private set; }
     public CharacterStats characterStats { get; private set; }
     public CapsuleCollider2D cd { get; private set; }
@@ -40,7 +41,6 @@ public class Entity : MonoBehaviour
     {
         sr = GetComponentInChildren<SpriteRenderer>();
         anim = GetComponentInChildren<Animator>();
-        fx = GetComponent<EntityFX>();
         entityRigidbody2D = GetComponent<Rigidbody2D>();
         characterStats = GetComponent<CharacterStats>();
         cd = GetComponent<CapsuleCollider2D>();
@@ -60,17 +60,33 @@ public class Entity : MonoBehaviour
         anim.speed = 1;
     }
 
+    public void SetupKnockbackPower(Vector2 _knockbackpower) => knockBackPower = _knockbackpower;
+
     public virtual IEnumerator HitKnockback() 
     { 
         isKnocked = true;
 
-        entityRigidbody2D.velocity = new Vector2(knockBackDirection.x * -facingDir, knockBackDirection.y);
+        entityRigidbody2D.velocity = new Vector2(knockBackPower.x * knockbackDir, knockBackPower.y);
 
         yield return new WaitForSeconds(knockBackDuration);
         isKnocked = false;
+        SetupZeroKnockbackPower();
+    }
+
+    protected virtual void SetupZeroKnockbackPower()
+    { 
+        
     }
 
     public virtual void DamageImpact() => StartCoroutine(HitKnockback());
+
+    public virtual void SetupKnockbackDir(Transform _damageDirection)
+    {
+        if (_damageDirection.position.x > transform.position.x)
+            knockbackDir = -1;
+        else if (_damageDirection.position.x < transform.position.x)
+            knockbackDir = 1;
+    }
 
     #region Collision
     public virtual bool IsGroundDetected() => Physics2D.Raycast(groundTransform.position, Vector2.down, groundDistance, groundLayerMask);
@@ -80,7 +96,7 @@ public class Entity : MonoBehaviour
     protected virtual void OnDrawGizmos()
     {
         Gizmos.DrawLine(groundTransform.position, new Vector3(groundTransform.position.x, groundTransform.position.y - groundDistance));
-        Gizmos.DrawLine(wallTransform.position, new Vector3(wallTransform.position.x + wallDistance, wallTransform.position.y));
+        Gizmos.DrawLine(wallTransform.position, new Vector3(wallTransform.position.x + wallDistance * facingDir, wallTransform.position.y));
         Gizmos.DrawWireSphere(attackCheck.position, attackCheckRadius);
     }
     #endregion
@@ -102,6 +118,14 @@ public class Entity : MonoBehaviour
             Flip();
         else if (xVelocity < 0 && facingRight)
             Flip();
+    }
+
+    public virtual void SetupDefaultFacingDir(int _direction)
+    {
+        facingDir = _direction;
+
+        if (facingDir == -1)
+            facingRight = false;
     }
     #endregion
 

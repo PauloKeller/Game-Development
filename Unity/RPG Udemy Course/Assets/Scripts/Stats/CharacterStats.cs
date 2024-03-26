@@ -64,6 +64,7 @@ public class CharacterStats : MonoBehaviour
 
     public System.Action onHealthChanged;
     public bool isDead { get; private set; }
+    public bool isInvincible { get; private set; }
     private bool isVulnerable;
     protected virtual void Start()
     {
@@ -124,15 +125,23 @@ public class CharacterStats : MonoBehaviour
 
     public virtual void DoDamage(CharacterStats targetStats)
     {
+
+        bool criticalStrike = false;
+
         if (TargetCanAvoidAttack(targetStats))
             return;
+
+        targetStats.GetComponent<Entity>().SetupKnockbackDir(transform);
 
         int totalDamage = damage.GetValue() + strength.GetValue();
 
         if (CanCrit())
         {
             totalDamage = CalculateCriticalDamage(totalDamage);
+            criticalStrike = true;
         }
+
+        fx.CreateHitFX(targetStats.transform, criticalStrike);
 
         totalDamage = CheckTargetArmor(targetStats, totalDamage);
         targetStats.TakeDamage(totalDamage);
@@ -303,6 +312,9 @@ public class CharacterStats : MonoBehaviour
 
     public virtual void TakeDamage(int damage) 
     {
+        if (isInvincible)
+            return;
+        
         DecreaseHealthBy(damage);
 
         GetComponent<Entity>().DamageImpact();
@@ -329,6 +341,11 @@ public class CharacterStats : MonoBehaviour
             damage = Mathf.RoundToInt(damage * 1.1f);
 
         currentHealth -= damage;
+
+        if (damage > 0) { 
+            Debug.Log($"damage value {damage}");
+            fx.CreatePopUpText(damage.ToString());
+        }
 
         if (onHealthChanged != null)
             onHealthChanged();
@@ -403,6 +420,17 @@ public class CharacterStats : MonoBehaviour
     }
 
     #endregion
+
+    public void KillEntity()
+    {
+        if (!isDead)
+            Die();
+    }
+
+    public void MakeInvencible(bool _invincible)
+    { 
+        isInvincible = _invincible;
+    }
 
     public Stat GetStat(StatType _statType)
     {

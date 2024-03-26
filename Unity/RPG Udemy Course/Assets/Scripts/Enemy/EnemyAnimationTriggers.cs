@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySkeletonAnimationTriggers : MonoBehaviour
+public class EnemyAnimationTriggers : MonoBehaviour
 {
-    private EnemySkeleton enemy => GetComponentInParent<EnemySkeleton>();
+    private Enemy enemy => GetComponentInParent<Enemy>();
 
     private void AnimationTrigger()
     { 
@@ -20,6 +20,7 @@ public class EnemySkeletonAnimationTriggers : MonoBehaviour
             if (hit.GetComponent<Player>() != null)
             {
                 PlayerStats target = hit.GetComponent<PlayerStats>();
+
                 enemy.characterStats.DoDamage(target);
             }
         }
