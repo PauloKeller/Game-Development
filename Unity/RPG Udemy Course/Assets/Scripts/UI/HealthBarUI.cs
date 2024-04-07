@@ -1,26 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthBarUI : MonoBehaviour
 {
-    private Entity entity;
-    private CharacterStats myStats;
+    private Entity entity => GetComponentInParent<Entity>();
+    private CharacterStats myStats => GetComponentInParent<CharacterStats>();
     private RectTransform myTransform;
     private Slider slider;
 
     private void Start()
     {
         myTransform = GetComponent<RectTransform>();
-        entity = GetComponentInParent<Entity>();
         slider = GetComponentInChildren<Slider>();
-        myStats = GetComponentInParent<CharacterStats>();
-
-        entity.onFlipped += FlipUI;
-        myStats.onHealthChanged += UpdateHeathUI;
 
         UpdateHeathUI();
+    }
+
+    private void OnEnable()
+    {
+        entity.onFlipped += FlipUI;
+        myStats.onHealthChanged += UpdateHeathUI;
     }
 
     private void UpdateHeathUI()
@@ -33,7 +35,10 @@ public class HealthBarUI : MonoBehaviour
 
     private void OnDisable() 
     {
-        entity.onFlipped -= FlipUI;
-        myStats.onHealthChanged -= UpdateHeathUI;
+        if (entity != null && myStats != null)
+        {
+            entity.onFlipped -= FlipUI;
+            myStats.onHealthChanged -= UpdateHeathUI;
+        }
     }
 }

@@ -1,5 +1,5 @@
 {
-    "currency": 400,
+    "currency": 0,
     "skillTree": {
         "keys": [
             "Crystal mirage",
@@ -37,7 +37,7 @@
             false,
             false,
             false,
-            false,
+            true,
             false,
             false,
             false,
@@ -85,17 +85,17 @@
     "equipmentId": [],
     "checkpoints": {
         "keys": [
-            "796edefc-d6e4-42e8-8f54-a53ae13a9457",
-            "82af8668-b8b6-45d3-bea4-7603d0ae03ee"
+            "82af8668-b8b6-45d3-bea4-7603d0ae03ee",
+            "796edefc-d6e4-42e8-8f54-a53ae13a9457"
         ],
         "values": [
             true,
-            false
+            true
         ]
     },
     "closestCheckpointId": "796edefc-d6e4-42e8-8f54-a53ae13a9457",
-    "lostCurrencyX": 3.1716620922088625,
-    "lostCurrencyY": -2.706480026245117,
+    "lostCurrencyX": 6.861939430236816,
+    "lostCurrencyY": -2.7064719200134279,
     "lostCurrencyAmount": 0,
     "volumeSettings": {
         "keys": [

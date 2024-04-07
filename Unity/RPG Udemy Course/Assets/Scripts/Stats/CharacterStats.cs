@@ -128,6 +128,9 @@ public class CharacterStats : MonoBehaviour
 
         bool criticalStrike = false;
 
+        if (targetStats.isInvincible)
+            return;
+
         if (TargetCanAvoidAttack(targetStats))
             return;
 

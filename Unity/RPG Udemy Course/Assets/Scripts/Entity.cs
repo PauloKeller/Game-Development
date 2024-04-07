@@ -6,18 +6,19 @@ public class Entity : MonoBehaviour
 {
     [Header("Collision Info")]
     public Transform attackCheck;
-    public float attackCheckRadius;
+    public float attackCheckRadius = 1.2f;
     [SerializeField] protected Transform groundTransform;
-    [SerializeField] protected float groundDistance;
+    [SerializeField] protected float groundDistance = 1;
     [SerializeField] protected Transform wallTransform;
-    [SerializeField] protected float wallDistance;
+    [SerializeField] protected float wallDistance = .8f;
     [SerializeField] protected LayerMask groundLayerMask;
 
     public int knockbackDir { get; private set; }
 
     [Header("Knockback Info")]
-    [SerializeField] protected Vector2 knockBackPower;
-    [SerializeField] protected float knockBackDuration;
+    [SerializeField] protected Vector2 knockBackPower = new Vector2(7, 12);
+    [SerializeField] protected Vector2 knockBackOffSet = new Vector2(.5f, 2);
+    [SerializeField] protected float knockBackDuration = .07f;
     protected bool isKnocked;
 
     #region Components
@@ -66,7 +67,9 @@ public class Entity : MonoBehaviour
     { 
         isKnocked = true;
 
-        entityRigidbody2D.velocity = new Vector2(knockBackPower.x * knockbackDir, knockBackPower.y);
+        float xOffset = Random.Range(knockBackOffSet.x, knockBackOffSet.y);
+
+        entityRigidbody2D.velocity = new Vector2((knockBackPower.x + xOffset) * knockbackDir, knockBackPower.y);
 
         yield return new WaitForSeconds(knockBackDuration);
         isKnocked = false;

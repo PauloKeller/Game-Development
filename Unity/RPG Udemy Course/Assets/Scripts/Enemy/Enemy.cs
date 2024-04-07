@@ -12,22 +12,23 @@ public class Enemy : Entity
     [SerializeField] protected LayerMask playerLayerMask;
 
     [Header("Stunned Info")]
-    public float stunDuration;
-    public Vector2 stunDirection;
+    public float stunDuration = 1;
+    public Vector2 stunDirection = new Vector2(10, 12);
     protected bool canBeStunned;
     [SerializeField] protected GameObject counterImage;
 
     [Header("Move Info")]
     public float moveSpeed = 1.5f;
     public float idleTime = 2f;
-    public float battleTime;
+    public float battleTime = 7;
     private float defaultMoveSpeed;
 
     [Header("Attack Info")]
-    public float attackDistance;
+    public float agroDistance = 2;
+    public float attackDistance = 2;
     public float attackCooldown;
-    public float minAttackCooldown;
-    public float maxAttackCooldown;
+    public float minAttackCooldown = 1;
+    public float maxAttackCooldown = 2;
     [HideInInspector] public float lastTimeAttacked;
 
     public EnemyStateMachine stateMachine { get; private set; }
@@ -73,14 +74,14 @@ public class Enemy : Entity
         moveSpeed = defaultMoveSpeed;
     }
 
-    public virtual void FreezeTime(bool isFrozen) 
+    public virtual void FreezeTime(bool isFrozen)
     {
         if (isFrozen)
         {
             moveSpeed = 0;
             anim.speed = 0;
         }
-        else 
+        else
         {
             moveSpeed = defaultMoveSpeed;
             anim.speed = 1;
@@ -101,7 +102,7 @@ public class Enemy : Entity
 
     #region Counter Attack Window
     public virtual void OpenCounterAttackWindow()
-    { 
+    {
         canBeStunned = true;
         counterImage.SetActive(true);
     }
@@ -126,7 +127,22 @@ public class Enemy : Entity
 
     public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();
 
-    public virtual RaycastHit2D IsPlayerDetected() => Physics2D.Raycast(wallTransform.position, Vector2.right * facingDir, 50, playerLayerMask);
+    public virtual void AnimationSpecialAttackTrigger()
+    { 
+    }
+
+    public virtual RaycastHit2D IsPlayerDetected() 
+    {
+        float playerDistanceCheck = 50;
+
+        RaycastHit2D playerDetected = Physics2D.Raycast(wallTransform.position, Vector2.right * facingDir, playerDistanceCheck, playerLayerMask);
+        RaycastHit2D wallDetected = Physics2D.Raycast(wallTransform.position, Vector2.right * facingDir, playerDistanceCheck + 1, groundLayerMask);
+
+        if (wallDetected)
+            return default(RaycastHit2D);
+
+        return playerDetected;
+    }
 
     protected override void OnDrawGizmos()
     {
